@@ -35,7 +35,7 @@ func main() {
 
 func start() {
 	var err error
-	_, err = glutil.CreateProgram(vShader, fShader)
+	program, err = glutil.CreateProgram(vShader, fShader)
 
 	if err != nil {
 		log.Printf("Error creating GL program: %v", err)
@@ -62,7 +62,7 @@ func touch(t event.Touch) {
 }
 
 func draw() {
-	gl.ClearColor(1, green, 0, 1)
+	gl.ClearColor(1, 0, 0, 1)
 	gl.Clear(gl.COLOR_BUFFER_BIT)
 
 	gl.UseProgram(program)
