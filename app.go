@@ -85,7 +85,7 @@ func draw() {
 
 var triangleData = f32.Bytes(binary.LittleEndian,
 	0.0, 0.4, 0.0, // top left
-	0.0, 0.0, 0.0, // bottom left
+	-0.4, 0.0, 0.0, // bottom left
 	0.4, 0.0, 0.0, // bottom right
 )
 
